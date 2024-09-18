@@ -10,4 +10,5 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      - run: ver
+      - name: cmd 运行 ver
+        run: cmd ver
