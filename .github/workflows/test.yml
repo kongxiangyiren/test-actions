@@ -8,7 +8,6 @@ on:
 jobs:
   build:
     runs-on: windows-latest
-
     steps:
       - name: cmd 运行 ver
         run: cmd ver
