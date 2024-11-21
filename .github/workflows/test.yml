@@ -13,3 +13,5 @@ jobs:
         run: cmd ver
       - name: node 版本
         run: node -v
+      - name: git 版本
+        run: git version
