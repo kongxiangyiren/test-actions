@@ -16,4 +16,4 @@ jobs:
       - name: git 版本
         run: git version
       - name: os 版本
-        run: echo "${{runner.tool_cache}}"
+        run: echo "${{runner.temp}}"
