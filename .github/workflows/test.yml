@@ -7,11 +7,20 @@ on:
       - main
 
 jobs:
-  build:
+  windows:
     runs-on: windows-latest
     steps:
       - name: cmd 运行 ver
         run: cmd ver
+      - name: node 版本
+        run: node -v
+      - name: git 版本
+        run: git version
+      - name: os 版本
+        run: echo "${{runner.temp}}"
+  ubuntu:
+    runs-on: ubuntu-latest
+    steps:
       - name: node 版本
         run: node -v
       - name: git 版本
